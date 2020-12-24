@@ -1,0 +1,83 @@
+body {
+font-family: Arial;
+font-size: 17px;
+padding: 8px;
+background: #eee;
+}
+
+* {
+box-sizing: border-box;
+}
+
+input[type=text] {
+width: 100%;
+margin-bottom: 20px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+
+}
+
+
+label {
+margin-bottom: 10px;
+display: block;
+}
+
+label, p {
+	font-weight: 600;
+}
+button {
+background-color: #000;
+color: white;
+padding: 12px;
+margin: 10px 0;
+border: none;
+
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+cursor: pointer;
+font-size: 17px;
+}
+
+
+form {
+	
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    
+}
+
+.entries {
+	display: flex;
+	width: 100%;
+	 justify-content: space-between;
+	  align-items: center;
+}
+
+.entry {
+	
+	margin: 3px;
+	padding: 3px;
+}
+
+#my-list input {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

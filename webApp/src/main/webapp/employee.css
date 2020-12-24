@@ -1,0 +1,164 @@
+body {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgba(53, 10, 79, .2);
+    
+}
+p {
+	font-size: 1.2em;
+}
+.content {
+    display: flex;
+    background-color: rgba(53, 10, 79, .4);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+input {
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.left-content input {
+	width: 100px;
+	flex: 1;
+	padding: 15px;
+	line-height: 10px;
+	height: 100%;
+	color: #fff;
+	font-size: 1.1rem;
+
+	
+}
+.left-content input:focus {
+	border:none;
+	outline: none;
+}
+.left-content p {
+	flex: 1;
+}
+.right input {
+	width: 100px;
+}
+
+.left, .right {
+	padding: 10px;
+	
+}
+.left {
+	padding: 10px;
+	border-right:  2px solid  rgba(53, 10, 79, .2);
+}
+
+h1 {
+	text-align: center;
+}
+
+.left-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  rgba(255, 255, 255, .2);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(53, 10, 79, .6);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgba(53, 10, 79, .6);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.right .schedule p {
+	text-align: center;
+}
+
+button {
+	padding: 10px;
+    width: 100%;
+    color: #000;
+    
+    border-radius: 3px;
+    background-color: #fff;
+  
+    font-family: "Bree Serif", sans-serif;
+    font-size: 1rem;
+    margin: 5px 2px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, .3);
+  
+    border: 2px solid transparent;
+}
+
+.btns {
+	display: flex;
+}
+
+
+
+

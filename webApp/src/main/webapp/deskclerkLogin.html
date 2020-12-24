@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/lodash.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="staffForm.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form id="form1" action="deskclerk.jsp" method="post" onsubmit="return checkReg(event)">
+                <h1>Desk Clerk Sign in</h1>
+                <div class="form-control">
+                    <input type="text" placeholder="Username" id="username" name="username" required/><small>Error message</small></div>
+                <div class="form-control"><input type="password" name="password" placeholder="Password" id="password" required/><small>Error message</small></div>
+
+                <button id="signIn1">Sign In</button>
+        </div>
+
+
+
+    </div>
+<script src="deskclerkLogin.js"></script>
+</body>
+
+
+</html>

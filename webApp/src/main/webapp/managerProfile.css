@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@200&display=swap');
+:root {
+    --color: #e40046;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9e9;
+    overflow-x: hidden;
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0 100px;
+}
+
+.profile-header {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    
+    position: relative;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, .2);
+}
+
+
+.profile-nav-info {
+    text-align: center;
+    
+    width: 100%;
+}
+
+.profile-nav-info h3 {
+    font-variant: small-caps;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    
+}
+
+.profile-nav-info .address {
+    
+    
+    color: rgb(107, 103, 103);
+}
+
+.profile-nav-info p {
+	font-weight: 600;
+    
+}
+
+.main-bd {
+    width: 100%;
+    display: flex;
+}
+
+
+.right-side {
+    width: 100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.nav {
+    width: 100%;
+    z-index: -1;
+}
+tr:first-child:hover {
+	cursor: default;
+	background-color: #e9e9e9;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.nav ul li {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.nav ul li.active,
+.nav ul li:hover {
+    box-shadow: 0px -3px 0px rgba(288, 0, 70, .9) inset;
+    width: 100%;
+}
+
+.profile-body {
+    width: 100%;
+    z-index: -1;
+}
+
+.tab {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+
+.booking button,
+form button {
+    width: 30%;
+    background-color: rgba(101, 101, 228, 0.9);
+    color: white;
+    border: 2px solid transparent;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    min-height: 50px;
+    font-size: .9rem;
+    transition: all .3s ease-in-out;
+}
+
+.booking button:hover,
+form button:hover {
+    background-color: #fff;
+    color: rgba(101, 101, 228, 0.9);
+    border-color: rgba(101, 101, 228, 0.9);
+}
+
+form {
+    text-align: left;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input {
+    line-height: 30px;
+    border-radius: 6px;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #555;
+    margin: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px -2px 0px rgba(101, 101, 228, 0.5)inset;
+    min-width: 30%;
+}
+
+.option {
+    background-color: rgba(101, 101, 228, 0.4);
+    line-height: 30px;
+    border-radius: 6px;
+    padding: 0 5px;
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    border: 2px solid transparent;
+    height: 40px;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.success {
+    border: 2px solid #6FFF84;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.linkHome {
+	padding: 5px;
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+}
+
+@media(max-width: 1100px) {
+    .profile-side {
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+    .profile-img img {
+        height: 200px;
+        width: 200px;
+        left: 50px;
+        top: 50px;
+    }
+}
+
+@media(max-width: 900px) {
+    body {
+        margin: 0 20px;
+    }
+    .profile-header {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .profile-img {
+        float: left;
+        width: 100%;
+        height: 200px;
+    }
+    .profile-img img {
+        position: relative;
+        left: 0;
+    }
+    .profile-nav-info {
+        text-align: center;
+    }
+    .profile-nav-info .address {
+        justify-content: center;
+    }
+    .main-bd {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .profile-side {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 5px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        margin: 5px;
+    }
+    .profile-header h3 {
+        font-size: 1.7rem;
+    }
+    .profile-header p,
+    .profile-header span {
+        font-size: .9rem;
+    }
+}

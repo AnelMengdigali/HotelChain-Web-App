@@ -1,0 +1,63 @@
+<html lang="en">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/lodash.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form id="form" action="/first_sprint/register" method="post" onSubmit="return checkReg(event)">
+                <h1>Create Account</h1>
+ 
+                <div class="form-control"><input type="text" placeholder="Username" id="usr" name="usr" />
+                    <small>Error message</small></div>
+
+                <div class="form-control"><input type="password" placeholder="Password" id="psw" name="psw" />
+                    <small>Error message</small></div>
+<input style="display:none;"type="text" value="0" name="login"/>
+                <div class="form-control"> <input type="password" placeholder="Repeat Password" id="psw-repeat" />
+                    <small>Error message</small></div>
+                <button id="register-page">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="form2" action="/first_sprint/register" method="post" onSubmit="return checkLog(event)">
+                <h1>Sign in</h1>
+       
+                <div class="form-control">
+                <input style="display:none;"type="text" value="1" name="login"/>
+                    <input type="text" placeholder="Username" id="usr2" name="usr"/><small>Error message</small></div>
+                <div class="form-control"><input type="password" placeholder="Password" id="psw2" /><small>Error message</small></div>
+                <a href="#">Forgot your password?</a>
+                <button id="signIn1">Sign In</button>
+        </div>        
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        
+ 
+    </div>
+
+</body>
+<script src="log.js"></script>
+
+</html>

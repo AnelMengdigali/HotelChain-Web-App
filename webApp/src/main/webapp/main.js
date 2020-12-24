@@ -1,0 +1,27 @@
+let header = document.querySelector('.header');
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+
+window.addEventListener('scroll', function () {
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('active', windowPosition)
+})
+
+hamburgerMenu.addEventListener('click', function () {
+    header.classList.toggle('menu-open');
+});
+
+let logLink = document.querySelector(".loggedIn");
+let staff = document.querySelector("#staff") ;
+let login = document.querySelector(".login");
+
+if (logLink.innerHTML) {
+	
+	login.parentNode.style.display="none";
+	logLink.parentNode.style.display="block";
+	staff.style.display = "none";
+} else {
+	
+	logLink.parentNode.style.display="none";
+	login.parentNode.style.display="block";
+	staff.style.display = "block";
+}
